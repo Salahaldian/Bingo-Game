@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bingo Game</title>
+    <link rel="stylesheet" href="Bingo.css">
+    <!-- to make the code responsives -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <header>
+      <h1>
+        <span>B </span>
+        <span> i </span>
+        <span> n </span>
+        <span> g </span>
+        <span> o</span>
+      </h1>
+    </header>
+    <div class="container">
+      <form>
+        <label for="num" id="label-num">Enter number of rows and columns:</label>
+        <input type="number" id="num" name="num" />
+        <button type="button" onclick="generateTable()">Generate Table</button>
+      </form>
+      <p class="note" id="note" style="display: none">
+        Note: When you are done with the row or column, click on the letter
+      </p>
+      <table id="bingoTable">
+      </table>
+    </div>
+    <script type="text/javascript" src="Bingo.js"></script>
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <p class="cope">&copy; Salahaldin Hameed | 2023</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

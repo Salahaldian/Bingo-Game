@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+header {
+  background-color: #222222;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+#bingoTable {
+  margin: auto;
+  width: 100%;
+  height: auto;
+  border-collapse: collapse;
+  border: 3px solid black;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+#bingoTable td {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: bold;
+  font-size: 20px;
+  border: 1px solid black;
+  background-color: white;
+}
+#bingoTable tr:first-child {
+  background-color: #ddd;
+}
+#bingoTable tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+#bingoTable tr:hover {
+  background-color: #ddd;
+}
+#bingoTable td:hover {
+  cursor: pointer;
+  background-color: #ccc;
+}
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+button:hover {
+  background-color: #3e8e41;
+}
+input[type="number"] {
+  padding: 5px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  margin-right: 10px;
+}
+form {
+  margin-top: 20px;
+  text-align: center;
+}
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+h1 span.active {
+  color: red;
+}
+.note {
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: #333; /* لون النص */
+  margin: 20px 0; /* تباعد بين العنوان والعناصر الأخرى */
+}
+footer {
+  background-color: #222222;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cope{
+  margin: 0;
+  padding: 10px;
+}

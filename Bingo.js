@@ -8,12 +8,14 @@ function generateTable() {
   note.style.display = "block";
   table.innerHTML = "";
   var usedNums = []; // تعريف المصفوفة لتخزين الأرقام المستخدمة مسبقًا
+  var maxNum = num * num; // الحصول على العدد الأقصى للأرقام
   for (var i = 0; i < num; i++) {
     var row = table.insertRow(i);
     for (var j = 0; j < num; j++) {
       var cell = row.insertCell(j);
       cell.classList.add("cell");
-      cell.innerHTML = Math.floor(Math.random() * num * num) + 1; // استخدام الدالة للحصول على رقم عشوائي فريد
+      var numToAdd = getUniqueRandomNumber(); // الحصول على رقم عشوائي فريد
+      cell.innerHTML = numToAdd; // إضافة الرقم العشوائي للخلية
       
       // اضافة حدث النقر على الخلية (cell)
       cell.addEventListener("click", function () {
@@ -30,7 +32,7 @@ function generateTable() {
     });
   });
   function getUniqueRandomNumber() {
-    var randomNum = Math.floor(Math.random() * 100); // الحصول على رقم عشوائي
+    var randomNum = Math.floor(Math.random() * maxNum) + 1; // الحصول على رقم عشوائي
   
     if (usedNums.indexOf(randomNum) !== -1) { // التحقق من وجود الرقم العشوائي في المصفوفة
       return getUniqueRandomNumber(); // إعادة استدعاء الدالة للحصول على رقم آخر في حالة وجود رقم مكرر
